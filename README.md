@@ -40,6 +40,10 @@ Si NO lo tienes instalado puedes usar este comando para instalar la versión 3.x
 ```
 $ sudo apt-get install python3.x
 ```
+<div align="right">
+  <small><a href="#tabla-de-contenido">volver al inicio</a></small>
+</div>
+
 ## Antes de empezar
 
 Para usar Python debemos tener un editor de texto abierto(yo utilizo Atom) y una terminal o cmd (línea de comandos) como administrador.
@@ -59,6 +63,10 @@ En éste modo puedes usar todos los comandos de Python o escribir código direct
  $ python archivo.py
 ```
 Ten en cuenta que para ejecutar el archivo con extensión “.py” debes estar ubicado en el directorio donde tienes guardado el archivo.
+
+<div align="right">
+  <small><a href="#tabla-de-contenido">volver al inicio</a></small>
+</div>
 
 ## Tipos de datos en Python
 
@@ -82,6 +90,10 @@ Ten en cuenta que para ejecutar el archivo con extensión “.py” debes estar 
 
 **En Python trabajas con módulos y ficheros que usas para importar las librerías.**
 
+<div align="right">
+  <small><a href="#tabla-de-contenido">volver al inicio</a></small>
+</div>
+
 ## Funciones
 Las funciones las defines con **def** junto a un nombre y unos paréntesis que reciben los parámetros a usar. Terminas con dos puntos.
 ```
@@ -95,12 +107,20 @@ Después por indentación colocas los datos que se ejecutarán desde la función
  >>> my_first_function()
 Hello World!
 ```
+<div align="right">
+  <small><a href="#tabla-de-contenido">volver al inicio</a></small>
+</div>
+
 ## Variables
 Las variables, a diferencia de los demás lenguajes de programación, no debes definirlas, ni tampoco su tipo de dato, ya que al momento de iterarlas se identificará su tipo. **Recuerda que en Python todo es un objeto.**
 ```
  A = 3 
  B = A
 ```
+<div align="right">
+  <small><a href="#tabla-de-contenido">volver al inicio</a></small>
+</div>
+
 ## Listas
 Las listas las declaras con corchetes. Estas pueden tener una lista dentro o cualquier tipo de dato.
 ```
@@ -108,6 +128,10 @@ Las listas las declaras con corchetes. Estas pueden tener una lista dentro o cua
  >>> L[0] 
  22
 ```
+<div align="right">
+  <small><a href="#tabla-de-contenido">volver al inicio</a></small>
+</div>
+
 ## Tuplas
 Las tuplas se declaran con paréntesis, recuerda que no puedes editar los datos de una tupla después de que la has creado.
 ```
@@ -115,6 +139,10 @@ Las tuplas se declaran con paréntesis, recuerda que no puedes editar los datos 
  >>> T[0] 
  22
 ```
+<div align="right">
+  <small><a href="#tabla-de-contenido">volver al inicio</a></small>
+</div>
+
 ## Diccionarios
 En los diccionarios tienes un grupo de datos con un formato: la primera cadena o número será la clave para acceder al segundo dato, el segundo dato será el dato al cual accederás con la llave. Recuerda que los diccionarios son listas de **llave:valor**.
 ```
@@ -122,6 +150,10 @@ En los diccionarios tienes un grupo de datos con un formato: la primera cadena o
  >>> D["Kill Bill"]
  "Tamarino"
 ``` 
+<div align="right">
+  <small><a href="#tabla-de-contenido">volver al inicio</a></small>
+</div>
+
 ## Conversiones
 De flotante a entero:
 ``` 
@@ -143,6 +175,10 @@ De tupla a lista:
  >>> list((4, 5, 2)) 
  [4, 5, 2]
 ``` 
+<div align="right">
+  <small><a href="#tabla-de-contenido">volver al inicio</a></small>
+</div>
+
 ## Operadores Comunes
 Longitud de una cadena, lista, tupla, etc.:
 ``` 
@@ -192,6 +228,10 @@ Información sobre una función o librería:
  >>> help(sorted) 
  (Aparecerá la documentación de la función sorted)
 ``` 
+<div align="right">
+  <small><a href="#tabla-de-contenido">volver al inicio</a></small>
+</div>
+
 ## Clases
 Clases es uno de los conceptos con más definiciones en la programación, pero en resumen sólo son la representación de un objeto. Para definir la clase usas class y el nombre. En caso de tener parámetros los pones entre paréntesis.
 
@@ -217,6 +257,10 @@ Lo que hicimos en las dos últimas líneas fue:
 
 Y por eso se imprime la cadena “Mi nombre es Arturo y tengo 21”
 
+<div align="right">
+  <small><a href="#tabla-de-contenido">volver al inicio</a></small>
+</div>
+
 ## Métodos especiales
 **cmp**(self,otro)
 Método llamado cuando utilizas los operadores de comparación para comprobar si tu objeto es menor, mayor o igual al objeto pasado como parámetro.
@@ -226,6 +270,10 @@ Método llamado para comprobar la longitud del objeto. Lo usas, por ejemplo, cua
 
 **init**(self,otro)
 Es un constructor de nuestra clase, es decir, es un “método especial” que es llamas automáticamente cuando creas un objeto.
+
+<div align="right">
+  <small><a href="#tabla-de-contenido">volver al inicio</a></small>
+</div>
 
 ## Condicionales IF
 Los condicionales tienen la siguiente estructura. Ten en cuenta que lo que contiene los paréntesis es la comparación que debe cumplir para que los elementos se cumplan.
@@ -237,6 +285,10 @@ Los condicionales tienen la siguiente estructura. Ten en cuenta que lo que conti
  else:
  	elementos
 ``` 
+<div align="right">
+  <small><a href="#tabla-de-contenido">volver al inicio</a></small>
+</div>
+
 ## Bucle FOR
 El bucle de for lo puedes usar de la siguiente forma: recorres una cadena o lista a la cual va a tomar el elemento en cuestión con la siguiente estructura:
 ``` 
@@ -250,6 +302,9 @@ Ejemplo:
 ``` 
 En este caso recorrerá una lista de diez elementos, es decir el _print i _de ejecutar diez veces. Ahora i va a tomar cada valor de la lista, entonces este for imprimirá los números del 0 al 9 (recordar que en un range vas hasta el número puesto -1).
 
+<div align="right">
+  <small><a href="#tabla-de-contenido">volver al inicio</a></small>
+</div>
 
 ## Bucle WHILE
 En este caso while tiene una condición que determina hasta cuándo se ejecutará. O sea que dejará de ejecutarse en el momento en que la condición deje de ser cierta. La estructura de un while es la siguiente:
