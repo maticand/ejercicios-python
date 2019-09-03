@@ -17,8 +17,8 @@
 - [Operadores Comunes](#operadores-comunes)
 - [Métodos especiales](#métodos-especiales)
 - [Condicionales IF](#condicionales-if)
-- [Áreas](#Áreas)
-- [Áreas](#Áreas)
+- [Bucle FOR](#bucle-for)
+- [Bucle WHILE](#bucle-while)
 - [Áreas](#Áreas)
 - [Áreas](#Áreas)
 - [Áreas](#Áreas)
@@ -242,7 +242,7 @@ Los condicionales tienen la siguiente estructura. Ten en cuenta que lo que conti
  else:
  	elementos
 ``` 
-Bucle FOR
+## Bucle FOR
 El bucle de for lo puedes usar de la siguiente forma: recorres una cadena o lista a la cual va a tomar el elemento en cuestión con la siguiente estructura:
 ``` 
  for i in ____:
@@ -255,17 +255,20 @@ Ejemplo:
 ``` 
 En este caso recorrerá una lista de diez elementos, es decir el _print i _de ejecutar diez veces. Ahora i va a tomar cada valor de la lista, entonces este for imprimirá los números del 0 al 9 (recordar que en un range vas hasta el número puesto -1).
 
-Bucle WHILE
-En este caso while tiene una condición que determina hasta cuándo se ejecutará. O sea que dejará de ejecutarse en el momento en que la condición deje de ser cierta. La estructura de un while es la siguiente:
 
+## Bucle WHILE
+En este caso while tiene una condición que determina hasta cuándo se ejecutará. O sea que dejará de ejecutarse en el momento en que la condición deje de ser cierta. La estructura de un while es la siguiente:
+``` 
  while (condición):
  	elementos
+```   
 Ejemplo:
-
+``` 
  >>> x = 0 
  >>> while x < 10: 
  ... 	print x 
  ... 	x += 1
+``` 
 En este ejemplo preguntará si es menor que diez. Dado que es menor imprimirá x y luego sumará una unidad a x. Luego x es 1 y como sigue siendo menor a diez se seguirá ejecutando, y así sucesivamente hasta que x llegue a ser mayor o igual a 10.
 
-
+**A continuación vamos a realizar ejercicios que te ayuden a comprender y poder aplicar cada una de las características de Python.**
