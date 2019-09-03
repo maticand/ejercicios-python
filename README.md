@@ -19,11 +19,6 @@
 - [Condicionales IF](#condicionales-if)
 - [Bucle FOR](#bucle-for)
 - [Bucle WHILE](#bucle-while)
-- [Áreas](#Áreas)
-- [Áreas](#Áreas)
-- [Áreas](#Áreas)
-- [Áreas](#Áreas)
-- [Áreas](#Áreas)
 
 ## Instalación
 
