@@ -18,7 +18,12 @@
 - [Métodos especiales](#métodos-especiales)
 - [Condicionales IF](#condicionales-if)
 - [Bucle FOR](#bucle-for)
-- [Bucle WHILE](#bucle-while)
+- [Comparación de strings y unicode](#comparación-de-strings-y-unicode)
+- [Factorial de un número con recursión](#factorial-de-un-número-con-recursión)
+- [Manejo de strings en Python](#manejo-de-strings-en-python)
+- [Separar cadenas de texto en Python](#separar-cadenas-de-texto-en-python)
+- [Python](#Python)
+- [Python](#Python)
 
 ## Instalación
 
@@ -322,3 +327,71 @@ Ejemplo:
 En este ejemplo preguntará si es menor que diez. Dado que es menor imprimirá x y luego sumará una unidad a x. Luego x es 1 y como sigue siendo menor a diez se seguirá ejecutando, y así sucesivamente hasta que x llegue a ser mayor o igual a 10.
 
 **A continuación vamos a realizar ejercicios que te ayuden a comprender y poder aplicar cada una de las características de Python.**
+
+## Comparación de strings y unicode
+Los strings tienen una característica muy importante: son inmutables, esto quiere decir que no se pueden cambiar después de que se han declarado.
+
+Si quieres modificar el texto de un string debes definir un nuevo string y modificarlo usando funciones como slice.
+
+**Comparación de strings**
+
+Se pueden realizar operaciones con strings, por ejemplo comparar si son iguales o mayores o menores.
+
+**Diferencia entre ASCII y Unicode**
+
+Los caracteres también son números, para esto existen estándares que asignan un número a cada carácter, para generar un estándar se creó el ASCII pero esta solo toma en cuenta los caracteres en inglés, para dar soporte a más lenguajes se crea UNICODE.
+
+Python codifica en ASCII por default, para cambiarlo por UNICODE debemos colocar u antes del string.
+
+## Factorial de un número con recursión
+En éste video hablaremos sobre la recursión, una función está siendo recursiva cuando dentro de el bloque de instrucciones que la conforma se usa a sí misma.
+
+El concepto puede sonar complicado pero es muy común su uso, por ejemplo cuando haces el calculo del factorial de un número lo haces con una función recursiva:
+
+**El factorial de un número es el número multiplicado por los números antes de el**, por ejemplo
+
+5! es 5*4*3*2*1
+
+Esto se puede expresar como
+
+5*fac(4)
+4*fac(3)
+3*fac(2)
+2*fac(1)
+1*fac(0)
+
+**Nota importante**: Cuándo estes trabajando con recursividad siempre debes pensar en el caso base, es decir debes definir el momento en el que la función dejará de llamarse a si misma, para que no hagas un loop infinito, por ejemplo en el caso del factorial terminas la ejecución cuando llegas a cero.
+
+## Manejo de strings en Python
+Un string es una secuencia de caracteres, donde cada caracter tiene un indice que inicia en cero, por ejemplo
+
+my_string = 'platzi'
+
+my_string[0] # p
+my_string[1] # l
+my_string[2] # a
+my_string[3] # t
+my_string[4] # z
+my_string[5] # i
+
+Para conocer la longitud de un string podemos usar la funcion len
+
+len(my_string) # 6
+Los string tienen algunos métodos útiles cómo:
+
+my_string.upper() # retorna el string en máyusculas
+my_string.lower() # retorna el string en minúscula
+my_string.find('F') # retorna el índice donde se encuentra
+
+## Separar cadenas de texto en Python
+La función slice de python nos permite separar los strings en substrings generando nuevas secuencias.
+
+my_string = 'platzi'
+
+my_string[1:3] # la
+
+my_string[1:] # latzi
+
+my_string[1:6:2] # lti
+
+my_string[::-1] # iztalp
