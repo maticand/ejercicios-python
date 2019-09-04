@@ -23,6 +23,10 @@
 - [Factorial de un número con recursión](#factorial-de-un-número-con-recursión)
 - [Manejo de strings en Python](#manejo-de-strings-en-python)
 - [Separar cadenas de texto en Python](#separar-cadenas-de-texto-en-python)
+- [Ciclos en Python con for](#ciclos-en-python-con-for)
+- [Ciclos en Python con while](#ciclos-en-python-con-while)
+- [Python](#Python)
+- [Python](#Python)
 - [Python](#Python)
 
 ## Instalación
@@ -418,4 +422,41 @@ La función slice de python nos permite separar los strings en substrings genera
   <small><a href="#tabla-de-contenido">volver al inicio</a></small>
 </div>
 
-## 
+## Ciclos en Python con for
+Cuando necesitamos realizar operaciones sobre una serie de datos podemos utilizar iteraciones.
+
+**Función range**
+
+La función range nos permite generar un rango a partir de un número
+```
+range(5) # [0,1,2,3,4]
+range(5, 40, 3)
+```
+**Iteraciones con for**
+
+for nos permite recorrer un arreglo, asignando cada valor a una variable que decidas
+```
+for i in range(5):
+    print(i)
+```
+Podemos operar los valores usando también condiciones, en este caso solo queremos elevar al cuadrado, los valores que sean divisibles por 3
+```
+for i in range(30):
+  if i % 3 != 0:
+    continue
+  else:
+    print(i**2)
+```
+La palabra reservada continue permite saltar a la siguiente iteración del ciclo y break permite salirse del ciclo.
+
+<div align="right">
+  <small><a href="#tabla-de-contenido">volver al inicio</a></small>
+</div>
+
+## Ciclos en Python con while
+Otra forma de hacer iteraciones es con el while loop, éste ciclo se ejecuta MIENTRAS la condición se evalúe como verdadera, el ciclo termina cuando la evaluación resulta en falso.
+En este tipo de ciclo es muy importante definir la condición de parada, si no el ciclo puede ejecutarse hasta el infinito y consumir todos los recursos de la maquina.
+
+**Recuerda:**
+
+Para detener la ejecución de un ciclo, puede utilizar CTRL + C en la consola.
