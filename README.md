@@ -328,6 +328,10 @@ En este ejemplo preguntará si es menor que diez. Dado que es menor imprimirá x
 
 **A continuación vamos a realizar ejercicios que te ayuden a comprender y poder aplicar cada una de las características de Python.**
 
+<div align="right">
+  <small><a href="#tabla-de-contenido">volver al inicio</a></small>
+</div>
+
 ## Uso de strings y Ciclos
 ## Comparación de strings y unicode
 Los strings tienen una característica muy importante: son inmutables, esto quiere decir que no se pueden cambiar después de que se han declarado.
@@ -343,6 +347,10 @@ Se pueden realizar operaciones con strings, por ejemplo comparar si son iguales 
 Los caracteres también son números, para esto existen estándares que asignan un número a cada carácter, para generar un estándar se creó el ASCII pero esta solo toma en cuenta los caracteres en inglés, para dar soporte a más lenguajes se crea UNICODE.
 
 Python codifica en ASCII por default, para cambiarlo por UNICODE debemos colocar u antes del string.
+
+<div align="right">
+  <small><a href="#tabla-de-contenido">volver al inicio</a></small>
+</div>
 
 ## Factorial de un número con recursión
 En éste video hablaremos sobre la recursión, una función está siendo recursiva cuando dentro de el bloque de instrucciones que la conforma se usa a sí misma.
@@ -362,6 +370,10 @@ Esto se puede expresar como
 1*fac(0)
 ``` 
 **Nota importante**: Cuándo estes trabajando con recursividad siempre debes pensar en el caso base, es decir debes definir el momento en el que la función dejará de llamarse a si misma, para que no hagas un loop infinito, por ejemplo en el caso del factorial terminas la ejecución cuando llegas a cero.
+
+<div align="right">
+  <small><a href="#tabla-de-contenido">volver al inicio</a></small>
+</div>
 
 ## Manejo de strings en Python
 Un string es una secuencia de caracteres, donde cada caracter tiene un indice que inicia en cero, por ejemplo
@@ -385,6 +397,10 @@ Los string tienen algunos métodos útiles cómo:
 ``` my_string.lower() ``` # retorna el string en minúscula
 ``` my_string.find('F') ``` # retorna el índice donde se encuentra
 
+<div align="right">
+  <small><a href="#tabla-de-contenido">volver al inicio</a></small>
+</div>
+
 ## Separar cadenas de texto en Python
 La función slice de python nos permite separar los strings en substrings generando nuevas secuencias.
 
@@ -397,3 +413,9 @@ La función slice de python nos permite separar los strings en substrings genera
 ``` my_string[1:6:2] # lti``` 
 
 ``` my_string[::-1] # iztalp``` 
+
+<div align="right">
+  <small><a href="#tabla-de-contenido">volver al inicio</a></small>
+</div>
+
+## 
