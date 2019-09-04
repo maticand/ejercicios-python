@@ -359,7 +359,7 @@ El concepto puede sonar complicado pero es muy común su uso, por ejemplo cuando
 
 **El factorial de un número es el número multiplicado por los números antes de el**, por ejemplo
 
-5! es 5*4*3*2*1
+```5! es 5*4*3*2*1```
 
 Esto se puede expresar como
 ``` 
