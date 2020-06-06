@@ -1274,3 +1274,7 @@ En el sentido de la idea de los lenguajes de programación llega **Dennis Ritchi
   <h5>Guido van Rossum</h5>
 </div>
 <br>
+
+<div align="right">
+  <small><a href="#tabla-de-contenido">volver al inicio</a></small>
+</div>
