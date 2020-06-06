@@ -19,28 +19,26 @@
 - [Métodos especiales](#métodos-especiales)
 - [Condicionales IF](#condicionales-if)
 - [Bucle FOR](#bucle-for)
-- [Uso de strings y ciclos](#uso-de-strings-y-ciclos)
-- [Comparación de strings y unicode](#comparación-de-strings-y-unicode)
-- [Factorial de un número con recursión](#factorial-de-un-número-con-recursión)
-- [Manejo de strings en Python](#manejo-de-strings-en-python)
-- [Separar cadenas de texto en Python](#separar-cadenas-de-texto-en-python)
-- [Ciclos en Python con for](#ciclos-en-python-con-for)
-- [Ciclos en Python con while](#ciclos-en-python-con-while)
-- [Cadenas](#Cadenas)
+- [Uso de Strings](#uso-de-strings)
+  - [Comparación de strings y unicode](#comparación-de-strings-y-unicode)
+  - [Cadenas](#Cadenas)
+  - [Manejo de strings en Python](#manejo-de-strings-en-python)
+  - [Separar cadenas de texto en Python](#separar-cadenas-de-texto-en-python)
 - [Entradas](#Entradas)
 - [Programas ramificados](#Programas-ramificados)
 - [Iteraciones](#Iteraciones)
 - [Bucles for](#Bucles-for)
+- [Función range](#Función-range)
 - [Programas numéricos](#Programas-numéricos)
   - [Representación de flotantes](#Representación-de-flotantes)
   - [Enumeración exhaustiva](#Enumeración-exhaustiva)
   - [Aproximación de soluciones](#Aproximación-de-soluciones)
   - [Búsqueda Binaria](#Búsqueda-Binaria)
+  - [Factorial de un número con recursión](#factorial-de-un-número-con-recursión)
 - [Funciones, alcance y abstracción](#Funciones,-alcance-y-abstracción)
 - [Introducción al pensamiento computacional](#Introducción-al-pensamiento-computacional)
   - [Introducción al cómputo](#Introducción-al-cómputo)
   - [Lenguajes de programación](#Lenguajes-de-programación)
-- [Python](#Python)
 
 ## Instalación
 
@@ -398,7 +396,7 @@ En este ejemplo preguntará si es menor que diez. Dado que es menor imprimirá x
   <small><a href="#tabla-de-contenido">volver al inicio</a></small>
 </div>
 
-## Uso de strings y Ciclos
+## Uso de Strings
 ## Comparación de strings y unicode
 Los strings tienen una característica muy importante: son inmutables, esto quiere decir que no se pueden cambiar después de que se han declarado.
 
@@ -413,111 +411,6 @@ Se pueden realizar operaciones con strings, por ejemplo comparar si son iguales 
 Los caracteres también son números, para esto existen estándares que asignan un número a cada carácter, para generar un estándar se creó el ASCII pero esta solo toma en cuenta los caracteres en inglés, para dar soporte a más lenguajes se crea UNICODE.
 
 Python codifica en ASCII por default, para cambiarlo por UNICODE debemos colocar u antes del string.
-
-<div align="right">
-  <small><a href="#tabla-de-contenido">volver al inicio</a></small>
-</div>
-
-## Factorial de un número con recursión
-En éste video hablaremos sobre la recursión, una función está siendo recursiva cuando dentro de el bloque de instrucciones que la conforma se usa a sí misma.
-
-El concepto puede sonar complicado pero es muy común su uso, por ejemplo cuando haces el calculo del factorial de un número lo haces con una función recursiva:
-
-**El factorial de un número es el número multiplicado por los números antes de el**, por ejemplo
-
-```5! es 5*4*3*2*1```
-
-Esto se puede expresar como
-``` 
-5*fac(4)
-4*fac(3)
-3*fac(2)
-2*fac(1)
-1*fac(0)
-``` 
-**Nota importante**: Cuándo estes trabajando con recursividad siempre debes pensar en el caso base, es decir debes definir el momento en el que la función dejará de llamarse a si misma, para que no hagas un loop infinito, por ejemplo en el caso del factorial terminas la ejecución cuando llegas a cero.
-
-<div align="right">
-  <small><a href="#tabla-de-contenido">volver al inicio</a></small>
-</div>
-
-## Manejo de strings en Python
-Un string es una secuencia de caracteres, donde cada caracter tiene un indice que inicia en cero, por ejemplo
-``` 
-my_string = 'platzi'
-``` 
-``` 
-my_string[0] # p
-my_string[1] # l
-my_string[2] # a
-my_string[3] # t
-my_string[4] # z
-my_string[5] # i
-``` 
-Para conocer la longitud de un string podemos usar la funcion len
-
-``` len(my_string) # 6``` 
-Los string tienen algunos métodos útiles cómo:
-
-``` my_string.upper() ``` # retorna el string en máyusculas
-``` my_string.lower() ``` # retorna el string en minúscula
-``` my_string.find('F') ``` # retorna el índice donde se encuentra
-
-<div align="right">
-  <small><a href="#tabla-de-contenido">volver al inicio</a></small>
-</div>
-
-## Separar cadenas de texto en Python
-La función slice de python nos permite separar los strings en substrings generando nuevas secuencias.
-
-``` my_string = 'platzi'``` 
-
-``` my_string[1:3] # la``` 
-
-``` my_string[1:] # latzi``` 
-
-``` my_string[1:6:2] # lti``` 
-
-``` my_string[::-1] # iztalp``` 
-
-<div align="right">
-  <small><a href="#tabla-de-contenido">volver al inicio</a></small>
-</div>
-
-## Ciclos en Python con for
-Cuando necesitamos realizar operaciones sobre una serie de datos podemos utilizar iteraciones.
-
-**Función range**
-
-La función range nos permite generar un rango a partir de un número
-```
-range(5) # [0,1,2,3,4]
-range(5, 40, 3)
-```
-**Iteraciones con for**
-
-for nos permite recorrer un arreglo, asignando cada valor a una variable que decidas
-```
-for i in range(5):
-    print(i)
-```
-Podemos operar los valores usando también condiciones, en este caso solo queremos elevar al cuadrado, los valores que sean divisibles por 3
-```
-for i in range(30):
-  if i % 3 != 0:
-    continue
-  else:
-    print(i**2)
-```
-La palabra reservada continue permite saltar a la siguiente iteración del ciclo y break permite salirse del ciclo.
-
-<div align="right">
-  <small><a href="#tabla-de-contenido">volver al inicio</a></small>
-</div>
-
-## Ciclos en Python con while
-Otra forma de hacer iteraciones es con el while loop, éste ciclo se ejecuta MIENTRAS la condición se evalúe como verdadera, el ciclo termina cuando la evaluación resulta en falso.
-En este tipo de ciclo es muy importante definir la condición de parada, si no el ciclo puede ejecutarse hasta el infinito y consumir todos los recursos de la maquina. 
 
 <div align="right">
   <small><a href="#tabla-de-contenido">volver al inicio</a></small>
@@ -591,6 +484,50 @@ my_str[::2]                 # Traemos desde el principio hasta el final saltando
 <div align="right">
   <small><a href="#tabla-de-contenido">volver al inicio</a></small>
 </div>
+
+## Manejo de strings en Python
+Un string es una secuencia de caracteres, donde cada caracter tiene un indice que inicia en cero, por ejemplo
+``` 
+my_string = 'platzi'
+``` 
+``` 
+my_string[0] # p
+my_string[1] # l
+my_string[2] # a
+my_string[3] # t
+my_string[4] # z
+my_string[5] # i
+``` 
+Para conocer la longitud de un string podemos usar la funcion len
+
+``` len(my_string) # 6``` 
+Los string tienen algunos métodos útiles cómo:
+
+``` my_string.upper() ``` # retorna el string en máyusculas
+``` my_string.lower() ``` # retorna el string en minúscula
+``` my_string.find('F') ``` # retorna el índice donde se encuentra
+
+<div align="right">
+  <small><a href="#tabla-de-contenido">volver al inicio</a></small>
+</div>
+
+## Separar cadenas de texto en Python
+La función slice de python nos permite separar los strings en substrings generando nuevas secuencias.
+
+``` my_string = 'platzi'``` 
+
+``` my_string[1:3] # la``` 
+
+``` my_string[1:] # latzi``` 
+
+``` my_string[1:6:2] # lti``` 
+
+``` my_string[::-1] # iztalp``` 
+
+<div align="right">
+  <small><a href="#tabla-de-contenido">volver al inicio</a></small>
+</div>
+
 
 ## Entradas
 
@@ -897,6 +834,34 @@ Como pudimos observar, Python implementa los bucles definidos mediante los bucle
   <small><a href="#tabla-de-contenido">volver al inicio</a></small>
 </div>
 
+**Función range**
+
+La función range nos permite generar un rango a partir de un número
+```
+range(5) # [0,1,2,3,4]
+range(5, 40, 3)
+```
+**Iteraciones con for**
+
+for nos permite recorrer un arreglo, asignando cada valor a una variable que decidas
+```
+for i in range(5):
+    print(i)
+```
+Podemos operar los valores usando también condiciones, en este caso solo queremos elevar al cuadrado, los valores que sean divisibles por 3
+```
+for i in range(30):
+  if i % 3 != 0:
+    continue
+  else:
+    print(i**2)
+```
+La palabra reservada continue permite saltar a la siguiente iteración del ciclo y break permite salirse del ciclo.
+
+<div align="right">
+  <small><a href="#tabla-de-contenido">volver al inicio</a></small>
+</div>
+
 # Programas numéricos
 
 ## Representación de flotantes
@@ -1065,6 +1030,29 @@ print(f'La raiz cuadrada de {objetivo} es {respuesta}')
 ```
 
 Este algoritmo es extremadamente rápido en comparación a los anteriores y esto es justamente lo que lo hace uno de los mas potentes.
+
+<div align="right">
+  <small><a href="#tabla-de-contenido">volver al inicio</a></small>
+</div>
+
+## Factorial de un número con recursión
+En éste video hablaremos sobre la recursión, una función está siendo recursiva cuando dentro de el bloque de instrucciones que la conforma se usa a sí misma.
+
+El concepto puede sonar complicado pero es muy común su uso, por ejemplo cuando haces el calculo del factorial de un número lo haces con una función recursiva:
+
+**El factorial de un número es el número multiplicado por los números antes de el**, por ejemplo
+
+```5! es 5*4*3*2*1```
+
+Esto se puede expresar como
+``` 
+5*fac(4)
+4*fac(3)
+3*fac(2)
+2*fac(1)
+1*fac(0)
+``` 
+**Nota importante**: Cuándo estes trabajando con recursividad siempre debes pensar en el caso base, es decir debes definir el momento en el que la función dejará de llamarse a si misma, para que no hagas un loop infinito, por ejemplo en el caso del factorial terminas la ejecución cuando llegas a cero.
 
 <div align="right">
   <small><a href="#tabla-de-contenido">volver al inicio</a></small>
