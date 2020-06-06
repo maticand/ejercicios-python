@@ -7,7 +7,7 @@
 ## Tabla de Contenido
 - [Instalación](#instalación)
 - [Antes de empezar](#antes-de-empezar)
-- [Tipos de datos en Python](#tipos-de-datos-en-python)
+- [Tipos de datos en python](#tipos-de-datos-en-python)
 - [Funciones](#funciones)
 - [Variables](#variables)
 - [Asignación de variables](#Asignación-de-variables)
@@ -15,16 +15,14 @@
 - [Tuplas](#tuplas)
 - [Diccionarios](#diccionarios)
 - [Conversiones](#conversiones)
-- [Operadores Comunes](#operadores-comunes)
+- [Operadores comunes](#operadores-comunes)
 - [Clases](#clases)
 - [Métodos especiales](#métodos-especiales)
-- [Condicionales IF](#condicionales-if)
-- [Bucle FOR](#bucle-for)
-- [Uso de Strings](#uso-de-strings)
+- [Uso de strings](#uso-de-strings)
   - [Comparación de strings y unicode](#comparación-de-strings-y-unicode)
   - [Cadenas](#Cadenas)
-  - [Manejo de strings en Python](#manejo-de-strings-en-python)
-  - [Separar cadenas de texto en Python](#separar-cadenas-de-texto-en-python)
+  - [Manejo de strings en python](#manejo-de-strings-en-python)
+  - [Separar cadenas de texto en python](#separar-cadenas-de-texto-en-python)
 - [Entradas](#Entradas)
 - [Programas ramificados](#Programas-ramificados)
 - [Iteraciones](#Iteraciones)
@@ -34,9 +32,9 @@
   - [Representación de flotantes](#Representación-de-flotantes)
   - [Enumeración exhaustiva](#Enumeración-exhaustiva)
   - [Aproximación de soluciones](#Aproximación-de-soluciones)
-  - [Búsqueda Binaria](#Búsqueda-Binaria)
+  - [Búsqueda binaria](#Búsqueda-Binaria)
   - [Factorial de un número con recursión](#factorial-de-un-número-con-recursión)
-- [Funciones, alcance y abstracción](#Funciones,-alcance-y-abstracción)
+- [Funciones, alcance y abstracción](#Funciones-alcance-y-abstracción)
 - [Introducción al pensamiento computacional](#Introducción-al-pensamiento-computacional)
   - [Introducción al cómputo](#Introducción-al-cómputo)
   - [Lenguajes de programación](#Lenguajes-de-programación)
@@ -89,7 +87,7 @@ Ten en cuenta que para ejecutar el archivo con extensión “.py” debes estar 
   <small><a href="#tabla-de-contenido">volver al inicio</a></small>
 </div>
 
-## Tipos de datos en Python
+## Tipos de datos en python
 
 **Enteros (int):** en este grupo están todos los números, enteros y long:
 **ejemplo:** ```1, 2.3, 2121, 2192, -123```
@@ -249,7 +247,7 @@ De tupla a lista:
   <small><a href="#tabla-de-contenido">volver al inicio</a></small>
 </div>
 
-## Operadores Comunes
+## Operadores comunes
 Longitud de una cadena, lista, tupla, etc.:
 ``` 
  >>> len("key") 
@@ -345,59 +343,7 @@ Es un constructor de nuestra clase, es decir, es un “método especial” que e
   <small><a href="#tabla-de-contenido">volver al inicio</a></small>
 </div>
 
-## Condicionales IF
-Los condicionales tienen la siguiente estructura. Ten en cuenta que lo que contiene los paréntesis es la comparación que debe cumplir para que los elementos se cumplan.
-``` 
- if ( a > b ):
- 	elementos 
- elif ( a == b ): 
- 	elementos 
- else:
- 	elementos
-``` 
-<div align="right">
-  <small><a href="#tabla-de-contenido">volver al inicio</a></small>
-</div>
-
-## Bucle FOR
-El bucle de for lo puedes usar de la siguiente forma: recorres una cadena o lista a la cual va a tomar el elemento en cuestión con la siguiente estructura:
-``` 
- for i in ____:
- 	elementos
-``` 
-Ejemplo:
-``` 
- for i in range(10):
- 	print i
-``` 
-En este caso recorrerá una lista de diez elementos, es decir el _print i _de ejecutar diez veces. Ahora i va a tomar cada valor de la lista, entonces este for imprimirá los números del 0 al 9 (recordar que en un range vas hasta el número puesto -1).
-
-<div align="right">
-  <small><a href="#tabla-de-contenido">volver al inicio</a></small>
-</div>
-
-## Bucle WHILE
-En este caso while tiene una condición que determina hasta cuándo se ejecutará. O sea que dejará de ejecutarse en el momento en que la condición deje de ser cierta. La estructura de un while es la siguiente:
-``` 
- while (condición):
- 	elementos
-```   
-Ejemplo:
-``` 
- >>> x = 0 
- >>> while x < 10: 
- ... 	print x 
- ... 	x += 1
-``` 
-En este ejemplo preguntará si es menor que diez. Dado que es menor imprimirá x y luego sumará una unidad a x. Luego x es 1 y como sigue siendo menor a diez se seguirá ejecutando, y así sucesivamente hasta que x llegue a ser mayor o igual a 10.
-
-**A continuación vamos a realizar ejercicios que te ayuden a comprender y poder aplicar cada una de las características de Python.**
-
-<div align="right">
-  <small><a href="#tabla-de-contenido">volver al inicio</a></small>
-</div>
-
-## Uso de Strings
+## Uso de strings
 ## Comparación de strings y unicode
 Los strings tienen una característica muy importante: son inmutables, esto quiere decir que no se pueden cambiar después de que se han declarado.
 
@@ -486,7 +432,7 @@ my_str[::2]                 # Traemos desde el principio hasta el final saltando
   <small><a href="#tabla-de-contenido">volver al inicio</a></small>
 </div>
 
-## Manejo de strings en Python
+## Manejo de strings en python
 Un string es una secuencia de caracteres, donde cada caracter tiene un indice que inicia en cero, por ejemplo
 ``` 
 my_string = 'platzi'
@@ -512,7 +458,7 @@ Los string tienen algunos métodos útiles cómo:
   <small><a href="#tabla-de-contenido">volver al inicio</a></small>
 </div>
 
-## Separar cadenas de texto en Python
+## Separar cadenas de texto en python
 La función slice de python nos permite separar los strings en substrings generando nuevas secuencias.
 
 ``` my_string = 'platzi'``` 
@@ -724,7 +670,7 @@ for <variable> in <iterable>:
     <expresión>
 ```
 
-### El bucle for en Python
+### El bucle for en python
 
 En la definición anterior debemos entender <_iterable_> como una colección de objetos; y la <_variable_> como el elemento específico que se está exponiendo mediante el bucle en cada iteración.
 
@@ -835,7 +781,7 @@ Como pudimos observar, Python implementa los bucles definidos mediante los bucle
   <small><a href="#tabla-de-contenido">volver al inicio</a></small>
 </div>
 
-**Función range**
+## Función range
 
 La función range nos permite generar un rango a partir de un número
 ```
@@ -979,7 +925,7 @@ Puedes intentar ir moviendo la magnitud de epsilon para obtener una mejor precis
   <small><a href="#tabla-de-contenido">volver al inicio</a></small>
 </div>
 
-## Búsqueda Binaria
+## Búsqueda binaria
 
 Cuando la respuesta se encuentra en un conjunto ordenado, podemos utilizar **búsqueda binaria**. Es altamente eficiente, pues corta el espacio de búsqueda en dos por cada iteración. Los pasos que sigue son:
 
