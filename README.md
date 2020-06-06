@@ -16,6 +16,7 @@
 - [Diccionarios](#diccionarios)
 - [Conversiones](#conversiones)
 - [Operadores Comunes](#operadores-comunes)
+- [Clases](#clases)
 - [Métodos especiales](#métodos-especiales)
 - [Condicionales IF](#condicionales-if)
 - [Bucle FOR](#bucle-for)
